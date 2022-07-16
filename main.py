@@ -38,8 +38,8 @@ class MainWindow(QMainWindow):
         self.animation = QPropertyAnimation(self.ui.left_menu, b"minimumWidth")
         self.animation.setStartValue(menu_width)
         self.animation.setEndValue(width)
-        self.animation.setDuration(500)
-        self.animation.setEasingCurve(QEasingCurve.InOutCirc)
+        self.animation.setDuration(200)
+        self.animation.setEasingCurve(QEasingCurve.OutCubic)
         self.animation.start()
 
 if __name__ == "__main__":
